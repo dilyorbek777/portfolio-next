@@ -3,7 +3,7 @@ import { PageWrapper, PageWrapperNav, PageWrapperText } from '@/components/PageM
 import SocialIcons from '@/components/SocialIcons'
 import React from 'react'
 
-export default function Page() {
+export default function Services() {
  
     return (
         <>
