@@ -1,10 +1,10 @@
 "use client"
-import lo from '@/app/services/media/service.png'
-import lo2 from '@/app/services/media/serviceW2.png'
-import lo3 from '@/app/services/media/servb.png'
-import lo4 from '@/app/services/media/digital.png'
-import lo5 from '@/app/services/media/logobrand.png'
-import lo6 from '@/app/services/media/servapp.png'
+import lo from '@/media/service.png'
+import lo2 from '@/media/serviceW2.png'
+import lo3 from '@/media/servb.png'
+import lo4 from '@/media/digital.png'
+import lo5 from '@/media/logobrand.png'
+import lo6 from '@/media/servapp.png'
 
 import { motion } from "framer-motion";
 
