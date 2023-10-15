@@ -2,26 +2,259 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.fixed-nav {
+  position: fixed;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.mx-autoh {
+  left: 25px;
+}
+
+.icos::after {
+  content: "";
+  width: 5px;
+  height: 200px;
+  border-left: 3px dashed #000;
+}
+
+
+.icos::before {
+  content: "";
+  width: 5px;
+  height: 200px;
+  border-left: 3px dashed #000;
+}
+
+.image {
+  transform: rotate(0);
+  margin-left: 50px;
+  border-radius: 20px;
+  top: 100px;
+  margin-bottom: 70px;
+}
+
+.image img {
+  animation: anim2 3s linear infinite;
+  background-color: #ffffff3c;
+
+}
+
+/* @keyframes anim {
+  100% {
+    transform: translate(50px)  rotate(360deg);
+
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes anim2 {
+  100% {
+    transform: rotate(-360deg);
+  }
+} */
+
+
+.icon-bar {
+  display: none;
+}
+
+
+@media (max-width:1606px) {
+
+  .r-c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rc-t {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  .r-c .txt-r {
+    width: 80%;
+  }
+
+  .df-w {
+    width: 520px;
+  }
+
+  .icos {
+    left: 50px;
+    top: 50px;
+    position: fixed;
+  }
+
+  .image {
+    margin-left: 0;
+
+  }
+}
+
+@media (max-width:1351px) {
+  .resp-g {
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+  }
+}
+
+@media (max-width:1071px) {
+  .links {
+    display: none;
+  }
+
+  .icon-bar {
+    display: flex;
+  }
+
+  .px-32.wd3 {
+    padding: 1rem 5%;
+  }
+
+  /* 
+  .resp{
+    display: flex;
+  } */
+
+  .links.flex.gap-28.trued {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 80px;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.8), rgba(0, 0, 255, 0.486));
+    width: 100%;
+    left: 0;
+    color: aliceblue;
+    gap: 20px;
+    padding: 10px 100px;
+  }
+
+  .font-bold.text-6xl {
+    font-size: 40px;
+    font-weight: 900;
+  }
+}
+
+@media (max-width:880px) {
+  .txt-r {
+    width: 100% !important;
+  }
+
+  .links{
+    padding: 10px 50px !important;
+  }
+
+  .r-c {
+    padding: 8rem 0;
+  }
+
+  .r-c .txt-r .df-w {
+    width: 100%;
+  }
+  .texts{
+    z-index: -20;
+  }
+}
+
+@media (max-width:753px) {
+  .resp-g {
+    grid-template-columns: repeat(2, auto);
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .flex.w-full.gap-10 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex.w-full.gap-10 input {
+    width: 100%;
+  }
+}
+
+@media (max-width:610px) {
+  .icos {
+    left: 20px;
+    top: 50px;
+    position: fixed;
+  }
+}
+
+@media (max-width:547px) {
+  .dfc {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .icos {
+    flex-direction: row;
+    display: flex;
+    height: max-content;
+    margin-top: 30px;
+    z-index: 30 !important;
+    left: 50%;
+    transform: translate(-50%);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+  }
+
+  .image {
+    z-index: -10;
+  }
+
+  .icos::after {
+    content: "";
+    width: 0px;
+    height: 0;
+    border-left: 0px;
+  }
+
+
+  .icos::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 0px;
+
+  }
+
+  .btt {
+    width: 100%;
+  }
+
+  .r-c {
+    z-index: -10;
+  }
+
+  .rc-t {
+    width: 100%;
+
+  }
+
+  .dfc {
+    padding: 5%;
+  }
+
+  .dfc.lofr {
+    padding-top: 12vh;
+  }
+  .df-w {
+    width: 100%;
+  }
+}
+
+@media (max-width:410px) {
+  .icons{
+    grid-template-columns: auto;
+    justify-content: start;
+  }
 }
