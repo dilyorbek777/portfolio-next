@@ -7,7 +7,7 @@ const links = [
     { href: "/", text: "Home" },
     { href: "/about", text: "About" },
     { href: "/contact", text: "Contact" },
-    { href: "/services", text: "Services" },
+    { href: "/xizmat", text: "Services" },
     { href: "/projects", text: "Projects" }
 ]
 export default function BtnQuery() {
