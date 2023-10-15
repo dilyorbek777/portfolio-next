@@ -38,7 +38,7 @@ export default function Home() {
                     src={myimg}
                     width={400}
                     height={0}
-                    alt='my ohoto'
+                    alt='Dilyorbek, Asfandiyorov, Portfolio, Dilyorbek Asfandiyorov, online working, freelancing, 20+ real and large projects,  telegram bots.'
                   />
 
                 </PageWrapperText>
